@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDTalkSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "DDTalkSDK for DD Project"
 
   s.description  = "DDTalkSDK Wrapping for Talk"
