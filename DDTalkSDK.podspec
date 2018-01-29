@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDTalkSDK"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "DDTalkSDK for DD Project"
 
   s.description  = "DDTalkSDK Wrapping for Talk"
@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
   s.framework  = "UIKit, Foundation"
   s.ios.vendored_libraries = 'DDTalkSDK/libroomsdk.a'
   s.requires_arc = true
-
+  s.module_name = 'DDTalkSDK'
+  s.header_dir = 'DDTalkSDK'
 end
