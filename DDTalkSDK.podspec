@@ -1,21 +1,10 @@
-#
-#  Be sure to run `pod spec lint DDTalkSDK.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |s|
 
   s.name         = "DDTalkSDK"
   s.version      = "0.0.1"
   s.summary      = "DDTalkSDK for DD Project"
 
-  s.description  = <<-DESC
-  DDTalkSDK Wrapping for Talk
-                   DESC
-
+  s.description  = "DDTalkSDK Wrapping for Talk"
   s.homepage     = "https://gitlab.dadaabc.us/Random/TalkSDK"
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "RandomJ" => "random.zhan@dadaabc.com" }
@@ -24,6 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://gitlab.dadaabc.us/Random/TalkSDK.git", :tag => "#{s.version}" }
   s.source_files  = "DDTalkSDK/*.h"
   s.public_header_files = "DDTalkSDK/*.h"
+  s.framework  = "UIKit"
   s.ios.vendored_libraries = 'DDTalkSDK/libroomsdk.a'
   s.requires_arc = true
 
