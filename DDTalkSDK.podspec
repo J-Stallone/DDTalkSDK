@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://gitlab.dadaabc.us/Random/TalkSDK.git", :tag => "#{s.version}" }
   s.source_files  = "DDTalkSDK/*.h"
   s.public_header_files = "DDTalkSDK/*.h"
-  s.framework  = "UIKit"
+  s.framework  = "UIKit, Foundation"
   s.ios.vendored_libraries = 'DDTalkSDK/libroomsdk.a'
   s.requires_arc = true
 
