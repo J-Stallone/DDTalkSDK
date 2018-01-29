@@ -117,11 +117,11 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
-  s.ios.vendored_frameworks = 'StarscreamSocketIO.framework'
+  s.ios.vendored_frameworks = 'DDTalkSDK/StarscreamSocketIO.framework'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.ios.vendored_libraries = 'libroomsdk.a'
+  s.ios.vendored_libraries = 'DDTalkSDK/libroomsdk.a'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
