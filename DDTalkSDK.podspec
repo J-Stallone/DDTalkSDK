@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDTalkSDK"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "DDTalkSDK for DD Project"
 
   s.description  = "DDTalkSDK Wrapping for Talk"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://gitlab.dadaabc.us/Random/TalkSDK.git", :tag => "#{s.version}" }
   s.source_files  = "DDTalkSDK/*.h"
   s.public_header_files = "DDTalkSDK/*.h"
-  s.framework  = "UIKit, Foundation"
+  s.ios.frameworks = ["Foundation", "UIKit"]
   s.ios.vendored_libraries = 'DDTalkSDK/libroomsdk.a'
   s.requires_arc = true
   s.module_name = 'DDTalkSDK'
